@@ -39,20 +39,34 @@ class Mkulima {
       })  
       let getfarm=this.farms.find(obj=>{ 
         if(obj.farmId=="frm"){ 
-          console.log(obj)
+          console.log(getfarm)
         }
       }) 
       let addProduct=()=>{ 
-        this.farms.push({productId:"Prdct",})
-      }
+        this.products.push({productId:"Prdct1",productName:"Ovacado",prosuctPrice:40},{productId:"Prdct2",productName:"Mangoes",prosuctPrice:70}) 
+        console.log(addProduct()) 
+      } 
+      let removeProduct=()=>{
+      this.product.splice(1,1) 
+      console.log(removeProduct())} 
+
+      let updateProduct= this.products.find(obj=>{ 
+          if(obj.productId=="prdct2"){ 
+            obj.productName="Mayai" 
+            console.log(updateProduct)
+          } 
+        })   
+      let calculateTotalCost=(productId,quantity)=>{  
         
-      
-    
 
+      }      
+      } 
       }
+let mkulima=new Mkulima()
+console.log(this.products) 
 
 
-    } 
+    
 
  
   
